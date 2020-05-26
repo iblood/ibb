@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  margin:0;
+}
+
+.mysidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mysidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mysidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mysidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.mysidenav p{
+				font-size:20px;
+				color:white;
+				}
+	.mysidenav h1{
+					font-size:45px;
+					color:white;
+					text-align:center;
+					}			
+#topnav {
+overflow: hidden;
+  
+  padding: 0px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#topnav #logo {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+
+
+#topnav-left {
+  float: left;
+}
+.topnav-container{
+				position:absolute;
+				margin:10px;
+				width:auto;
+				}
+.bg-img{
+				background-image:url("bloodcells.png");
+				min-height:700px;
+				background-position:center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				position: relative;
+				}		
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+.bg-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+	@media screen and (max-height:450px) {
+  .mysidenav {padding-top: 15px;}
+  .mysidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="Sidenav" class="mysidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h1>Indo Blood</h1>
+<a href="search.html">Search</a>
+<a href="login.htnl">Login</a>
+<a href="bloodbanks.html">Blood Banks</a>
+<a href="about.html">About Us</a>
+<a href="faq.html">Faq</a>
+<a href="contactus.html">Contact Us</a>
+<p> *We are bound to tge protection of User data and privacy*</p>
+<p>*Indoblood is Made in India</p>
+<p>Social links</p>
+</div> <!---side nav div end ---!>
+<div id="main">
+<div class="bg-img">
+<div class="topnav-container">
+<div id="topnav">
+<a href="#default" id="logo">Indo Blood</a>
+<div id="topnav-left">
+<span style="font-size:30px;cursor:pointer;"onclick="openNav()">&#9776</span>
+</div> <!---topnav left div end---!>
+
+</div> <!---topnav div end---!>
+
+
+</div><!--- top nav container end ---!>
+<div class="bg-container">
+<div class="centered">We are ready</div><!---centered div end ---!>
+</div><!---bg container end---!>
+</div> <!---bg img div end---!>
+
+</div> <!---main div end---!>
+<script>
+function openNav() {
+  document.getElementById("Sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("topnav").style.padding = "10px 6px";
+    document.getElementById("logo").style.fontSize = "15px";
+   
+  } else {
+    document.getElementById("topnav").style.padding = "0px";
+    document.getElementById("logo").style.fontSize = "30px";
+   
+  }
+}
+</script>
+</body>
+</html>
