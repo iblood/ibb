@@ -45,9 +45,9 @@ body {
 				font-size:20px;
 				color:white;
 				}
-	.mysidenav img{
-Width:160px;
-Height:40px;
+	.mysidenav h1{
+Font-size:40px;
+}
 }
    
 				
@@ -75,9 +75,9 @@ overflow: hidden;
   border-radius: 4px;
 }
 
-#topnav #logo img {
-  Width:100px;
-  height:30px;
+#topnav #logo{
+  Font-size:40px;
+Color:white;
   transition: 0.4s;
 }
 
@@ -119,7 +119,7 @@ Font-size:30px;
 
 <div id="Sidenav" class="mysidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<img src="logo.png">
+<h1>Indo Blood</h1>
 <a href="search.html">Search</a>
 <a href="login.htnl">Login</a>
 <a href="bloodbanks.html">Blood Banks</a>
@@ -135,7 +135,7 @@ Font-size:30px;
 <div class="bg-img">
 <div class="topnav-container">
 <div id="topnav"> 
-<a href="#default" id="logo"><img src="logo.png"></a>
+<a href="#default" id="logo">Indo Blood</a>
 <div id="topnav-left">
 <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
 </div><!---topnav left div end---!>
@@ -177,11 +177,11 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("topnav").style.padding = "10px 6px";
-    document.getElementById("logo").style.height = "20px";
+    document.getElementById("logo").style.font-size = "20px";
    
   } else {
     document.getElementById("topnav").style.padding = "0px";
-    document.getElementById("logo").style.height= "40px";
+    document.getElementById("logo").style.font-size= "40px";
    
   }
 }
