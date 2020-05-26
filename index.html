@@ -75,9 +75,10 @@ overflow: hidden;
   border-radius: 4px;
 }
 
-#topnav #logo {
-  font-size: 30px;
-  font-weight: bold;
+#topnav #logo img {
+  Width:100px;
+  height:30px;
+}
   transition: 0.4s;
 }
 
@@ -105,8 +106,7 @@ overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  Color:white;
-  font-size:30px;
+  
 }
 
 	@media screen and (max-height:450px) {
@@ -135,7 +135,7 @@ overflow: hidden;
 <div class="bg-img">
 <div class="topnav-container">
 <div id="topnav"> 
-<a href="#default" id="logo">Indo Blood</a>
+<a href="#default" id="logo"><img src="logo.png"></a>
 <div id="topnav-left">
 <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
 </div><!---topnav left div end---!>
@@ -177,11 +177,11 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("topnav").style.padding = "10px 6px";
-    document.getElementById("logo").style.fontSize = "15px";
+    document.getElementById("logo").style.height = "20px";
    
   } else {
     document.getElementById("topnav").style.padding = "0px";
-    document.getElementById("logo").style.fontSize = "30px";
+    document.getElementById("logo").style.height= "40px";
    
   }
 }
