@@ -172,7 +172,7 @@ Text-align:center;
 .mySlides {
   display: none;
   text-align: center;
-  box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+
 }
 
 .previous {
@@ -195,7 +195,7 @@ Text-align:center;
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: #ddd;
+
 }
 
 /* The dots/bullets/indicators */
@@ -219,13 +219,14 @@ Text-align:center;
 list-style-type: none;
   border: 1px solid #eee;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2)
 }
 
 .price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  box-shadow: 6px 10px 18px 6px rgba(0,0,0,0.2)
 }
 
 .price .header {
@@ -244,9 +245,7 @@ list-style-type: none;
   background-color: #eee;
   font-size: 20px;
 }
-.intcolumn { 
-Padding:15px;
-}
+
 	@media screen and (max-height:650px) {
   .mysidenav {padding-top: 15px;}
   .mysidenav a {font-size: 18px;}
@@ -324,7 +323,7 @@ Status, General Information, Connecting To Search Requests And Marking With Thei
 <div class="slideshow-container">
 
 <div class="mySlides">
-<div class="intcolumn">
+
   <ul class="price">
     <li class="header">Users</li>
     <li class="grey">Data 100% Encripted</li>
@@ -355,14 +354,14 @@ Status, General Information, Connecting To Search Requests And Marking With Thei
 
 
 <a class="previous round" onclick="plusSlides(-1)">❮</a>
-<a class="next round" onclick="plusSlides(1)">❯</a>
-
-</div>
 
 <div class="dot-container">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span>
 </div>
+
+<a class="next round" onclick="plusSlides(1)">❯</a>
+
 
 </div><!---div container4end---!>
 </div><!---main div end---!>
