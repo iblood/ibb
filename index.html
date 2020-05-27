@@ -52,7 +52,11 @@ Font-size:40px;
 Color:white;
 text-align:center;
 }
-
+.mysidenav{
+Height:40px;
+Width:125px;
+align:center;
+}
    
 				
 					
@@ -179,7 +183,7 @@ Font-size:18px;
 
 <div id="Sidenav" class="mysidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<h1>Indo Blood</h1>
+<h1>Indo Blood</h1><img src="logo.png>
 <a href="search.html">Search</a>
 <a href="login.htnl">Login</a>
 <a href="bloodbanks.html">Blood Banks</a>
@@ -247,14 +251,12 @@ function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
     document.getElementById("span").style.color= "#FFD700";
     document.getElementById("logo").style.color= "#FFD700";
-   document.getElementById("topnav").style.padding = "0px";
+  
     document.getElementById("logo").style.fontSize = "20px";
-    document.getElementById("topnav").style.backgroundColor = "White";
   } else {
     document.getElementById("span").style.color= "White";
    document.getElementById("logo").style.color= "White";
-   document.getElementById("topnav").style.padding = "0px";
-    document.getElementById("logo").style.fontSize= "40px";
+ document.getElementById("logo").style.fontSize= "40px";
 
   }
 }
