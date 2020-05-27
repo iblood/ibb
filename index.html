@@ -174,31 +174,18 @@ Text-align:center;
   text-align: center;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.previous {
+  background-color: #f1f1f1;
+  color: black;
 }
 
-/* Position the "next button" to the right */
 .next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  background-color: #F1F1F1;
+  color: white;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
+.round {
+  border-radius: 50%;
 }
 
 /* The dot/bullet/indicator container */
@@ -255,7 +242,7 @@ list-style-type: none;
   font-size: 20px;
 }
 .intcolumn { 
-Padding:8px;
+Padding:15px;
 }
 	@media screen and (max-height:650px) {
   .mysidenav {padding-top: 15px;}
@@ -277,12 +264,11 @@ Background-color:#f1f1f1;
 <a href="login.htnl">Login</a>
 <a href="bloodbanks.html">Blood Banks</a>
 <a href="about.html">About Us</a>
-<a href="bbregistration.html">🩸Bank Registration </a>
+<a href="bbregistration.html">Blood Bank Registration </a>
 <a href="faq.html">Faq</a>
 <a href="contactus.html">Contact Us</a>
 <a href="gallery.html">Portfolio</a>
-<p> *We are bound to the protection of User data and privacy*</p>
-<p>*Indoblood is Made in India</p>
+
 <p>Social links</p>
 </div> <!---side nav div end ---!>
 
@@ -343,7 +329,7 @@ Status, General Information, Connecting To Search Requests And Marking With Thei
     <li>100% Free </li>
     <li>Dashboard Control</li>
     <li>Proxy And Inactive ✅</li>
-    <li class="grey">Bonos On 🩸Donation 
+    <li class="grey">Bonus On Blood Donation 
     </li>
   </ul>
 </div>
@@ -365,8 +351,8 @@ Status, General Information, Connecting To Search Requests And Marking With Thei
 
 
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<a class="previous round" onclick="plusSlides(-1)">❮</a>
+<a class="next round" onclick="plusSlides(1)">❯</a>
 
 </div>
 
