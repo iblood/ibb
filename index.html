@@ -8,6 +8,8 @@ body {
   margin:0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .mysidenav {
   height: 100%;
   width: 0;
@@ -157,12 +159,14 @@ height:500px;
 Background-Color:white;
 }
 .container h1{
-font-size:20px;
+font-size:22px;
 Text-align:center;
 Color:violet;
+font-family: 'Lobster', cursive;
 }
 .container p{
-Font-size:14px;
+Font-size:18px;
+
 }
 	@media screen and (max-height:650px) {
   .mysidenav {padding-top: 15px;}
@@ -195,7 +199,7 @@ Font-size:14px;
 <div id="topnav"> 
 <a href="#default" id="logo">Indo Blood</a>
 <div id="topnav-left">
-<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
+<span id="span" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
 </div><!---topnav left div end---!>
 
 </div><!---topnav div end---!>
@@ -214,7 +218,7 @@ Font-size:14px;
 </div><!---bg img div end---!>
 <div class="container">
 <h1>The Real Story</h1>
-<p>Many people die,as blood is not available in time</p>
+<p>Most of the people who met severe accidents die,as blood is not available in time</p>
 
 
 </div><!---div column 1 end---!>
@@ -248,6 +252,23 @@ function scrollFunction() {
   } else {
     document.getElementById("topnav").style.padding = "0px";
     document.getElementById("logo").style.fontSize= "40px";
+   
+  }
+}
+</script>
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 80) {
+    document.getElementById("span").style.color= "#FFD700";
+    document.getElementById("logo").style.color= "#FFD700";
+   
+  } else {
+    document.getElementById("span").style.color= "White";
+   document.getElementById("logo").style.color= "White";
    
   }
 }
