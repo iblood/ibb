@@ -165,6 +165,98 @@ Font-size:18px;
 Text-align:center;
 
 }
+
+
+
+/* Slides */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.price {
+list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+.intcolumn { 
+Padding:8px;
+}
 	@media screen and (max-height:650px) {
   .mysidenav {padding-top: 15px;}
   .mysidenav a {font-size: 18px;}
@@ -239,6 +331,52 @@ Status, General Information, Connecting To Search Requests And Marking With Thei
 </div><!---div container2end---!>
 <div class="container"><h1>Blood Banks</h1>
 </div><!---div container 3end---!>
+<div class="Container"><h1>Integrations</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+<div class="column">
+  <ul class="price">
+    <li class="header">Users</li>
+    <li class="grey">Data 100% Encripted</li>
+    <li>Full Privacy Secure</li>
+    <li>100% Free </li>
+    <li>Dashboard Control</li>
+    <li>Proxy And Inactive ✅</li>
+    <li class="grey">Bonos On 🩸Donation 
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="mySlides">
+  <div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Search</li>
+    <li class="grey">100% Privacy</li>
+    <li>No Limit Search</li>
+    <li>Donor Details✅ </li>
+    <li>Various Filters</li>
+    <li>Blood Bank Data</li>
+    <li class="grey">Location Search</li>
+  </ul>
+</div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+</div><!---div container4end---!>
 </div><!---main div end---!>
 
 
@@ -270,6 +408,35 @@ function scrollFunction() {
  document.getElementById("logo").style.fontSize= "40px";
 
   }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
 
