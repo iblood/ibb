@@ -63,64 +63,20 @@ a {
 }
 
 
-.custom-select {
-  position: relative;
-  font-family: Arial;
+select {
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  &:focus, &:active {
+    outline: 0;
+    border-bottom-color: red;
+  }
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
 </style>
 </head>
@@ -140,7 +96,7 @@ a {
       <input type="text" placeholder="Create Your Password" name="password">
       <label for="bgroup">Blood Group</label>
 
-<div class="custom-select" style="width:200px;">
+
 
         <select id="bgroup" name="bgroup" required>
           <option value=""></option>
@@ -153,13 +109,13 @@ a {
           <option value="ab+">AB +ve (AB Positive)</option>    
           <option value="ab-">AB -ve (AB Negative)</option>        
 </select>
-</div>
+
 
 
 
 <label for="groups"><b>State</b></label>
 
-<div class="custom-select" style="width:200px;">
+
 
      <select id="groups" name="groups" required>
 <option value=""></option>
@@ -193,20 +149,20 @@ a {
     <option value='Uttar Khand'>Uttar Khand</option>
     <option value='West Bengal'>West Bengal</option>
 </select>
-<\div>
+
 
 
 
 <label for="sub_groups"><b>District</b></label>
 
-<div class="custom-select" style="width:200px;">
+
 
     <select id="sub_groups" name="sub_groups" required>
 <option data-group='SHOW' value='0'>-- Select --</option>
 <option data-group='ap' value='anantapur'>anantapur</option><option data-group='ap' value='chittor'>chittor</option><option data-group='ap' value='east godavari'>east godavari</option><option data-group='ap' value='west godavari'>west godavari</option><option data-group='ap' value='guntur'>guntur</option><option data-group='ap' value='kadapa'>kadapa</option><option data-group='ap' value='krishna'>krishna</option><option data-group='ap' value='kurnool'>kurnool</option><option data-group='ap' value='prakasam'>prakasam</option><option data-group='ap' value='nellore'>nellore</option><option data-group='ap' value='srikakulam'>srikakulam</option><option data-group='ap' value='vishakapatnam'>vishakapatnam</option><option data-group='ap' value='viziangaram'>viziangaram</option>  
       <\select>
 
-<\div>
+
 
 <label>
         <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
