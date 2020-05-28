@@ -87,19 +87,10 @@ select {
       <h1>Register </h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-      <label for="phno"><b>Phone Number</b></label>
-      <input type="text" placeholder="Enter Phone Number" name="phno" required>
-      <label for="username"><b>Your Full Name</b></label>
-      <input type="text" placeholder="Enter Your Name" name="username" required>
-	  <label for="password"><b>Create your Password</b></label>
-      <input type="text" placeholder="Create Your Password" name="password">
-      <label for="bgroup">Blood Group</label>
-
-
-
-        <select id="bgroup" name="bgroup" required>
+      <label for="Fullname"><b>Your Name</b></label>
+      <input type="text" placeholder="Enter Your Name" name="Fullname" required>
+    <label for="bgroup">Blood Group</label>
+<select id="bgroup" name="bgroup" required>
           <option value=""></option>
           <option value="a+">A +ve (A Positive)</option>
           <option value="a-">A -ve (A Negative)</option>  
@@ -111,14 +102,14 @@ select {
           <option value="ab-">AB -ve (AB Negative)</option>        
 </select>
 
+<label for="country"><b>Country</b></label>
+<select id="country"   name="country"   required>
+<option value=""></option>
+<option value="India">India</option>
 
 
-
-<label for="groups"><b>State</b></label>
-
-
-
-     <select id="groups" name="groups" required>
+<label for="states"><b>State</b></label>
+ <select id="states" name="states" required>
 <option value=""></option>
     <option value='Andhra pradesh'>Andhra pradesh</option>
     <option value='Arunanchal pradesh'>Arunanchal pradesh</option>
@@ -150,20 +141,23 @@ select {
     <option value='Uttar Khand'>Uttar Khand</option>
     <option value='West Bengal'>West Bengal</option>
 </select>
-
-
-
-
-<label for="sub_groups"><b>District</b></label>
-
-
-
-    <select id="sub_groups" name="sub_groups" required>
+<label for="district"><b>District</b></label>
+ <select id="district" name="district" required>
 <option data-group='SHOW' value='0'>-- Select --</option>
 <option data-group='ap' value='anantapur'>anantapur</option><option data-group='ap' value='chittor'>chittor</option><option data-group='ap' value='east godavari'>east godavari</option><option data-group='ap' value='west godavari'>west godavari</option><option data-group='ap' value='guntur'>guntur</option><option data-group='ap' value='kadapa'>kadapa</option><option data-group='ap' value='krishna'>krishna</option><option data-group='ap' value='kurnool'>kurnool</option><option data-group='ap' value='prakasam'>prakasam</option><option data-group='ap' value='nellore'>nellore</option><option data-group='ap' value='srikakulam'>srikakulam</option><option data-group='ap' value='vishakapatnam'>vishakapatnam</option><option data-group='ap' value='viziangaram'>viziangaram</option>  
       <\select>
 
+<label for="phone-number"><b>Email</b></label>
+      <input type="text" placeholder="Enter Your Number" name="phone-number" required>
 
+<label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+<label for="cuname"><b>Custom User Name</b></label>
+      <input type="text" placeholder="Please Choose A fictious Name" name="cuname" required>
+
+<label for="address"><b>Address</b></label>
+      <input type="text" placeholder="H:no/Street Name/colony/(city)(village)" name="address" required>
 
 <label>
         <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
