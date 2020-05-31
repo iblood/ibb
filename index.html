@@ -339,6 +339,21 @@ height:700px;
   }
 }
 
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
 </style>
 </head>
 <body>
@@ -372,7 +387,7 @@ height:700px;
 
 </div><!---topnav container div end---!>
 
-  <div class="centered"><p>Join Our Community and,<br>Support Us To Save Lives</p><br>
+  <div class="centered animate"><p>Join Our Community and,<br>Support Us To Save Lives</p><br>
 <a href="register.html"><button class="button button1">Join Us</button></a><button class="button button2">Search</button>
 
 </div><!---centred div end---!>
