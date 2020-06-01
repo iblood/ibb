@@ -17,7 +17,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@ import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 .mysidenav {
   height: 100%;
   width: 0;
@@ -175,7 +175,7 @@ font-family: 'Lobster', cursive;
 .container p{
 Font-size:18px;
 Text-align:center;
-font-family: 'Roboto slab',sans serif;
+font-family: 'Roboto slab',serif;
 
 }
 
@@ -571,19 +571,11 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
 function openNav() {
   document.getElementById("Sidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
-
-document.getElementById("main").style.opacity = "0.1";
-}
-
 }
 
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-
-document.getElementById("main").style.opacity = "1";
-}
-
 }
 
 </script>
@@ -594,13 +586,14 @@ function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
     document.getElementById("span").style.color= "#FFD700";
     document.getElementById("logo").style.color= "#FFD700";
-   
+    
     document.getElementById("logo").style.fontSize = "20px";
 
   } else {
     document.getElementById("span").style.color= "White";
    document.getElementById("logo").style.color= "White";
  document.getElementById("logo").style.fontSize= "40px";
+
   }
 }
 </script>
