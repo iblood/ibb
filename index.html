@@ -628,6 +628,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<script>
 
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $("#topnav").css("background" , "red");
+	  }
+
+	  else{
+		  $("#topnav").css("background" , "transparent");  	
+	  }
+  })
+})
+</script>
 </body>
 </html>
