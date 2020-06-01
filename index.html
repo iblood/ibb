@@ -586,17 +586,19 @@ function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
     document.getElementById("span").style.color= "#FFD700";
     document.getElementById("logo").style.color= "#FFD700";
-    
+    document.getElementByClass("mysidenav").style.backgroundColor= "deeppink";
     document.getElementById("logo").style.fontSize = "20px";
 
   } else {
     document.getElementById("span").style.color= "White";
    document.getElementById("logo").style.color= "White";
  document.getElementById("logo").style.fontSize= "40px";
-
+document.getElementByClass("mysidenav").style.backgroundColor= "#39ff14";
   }
 }
 </script>
+
+   
 
 <script>
 var slideIndex = 1;
