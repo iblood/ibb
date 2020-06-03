@@ -617,7 +617,7 @@ function scrollFunction() {
 document.getElementById("topnav").style.box-shadow = "2px 4px 6px";
   } else {
     document.getElementById("logo").style.fontSize= "40px";
-document.getElementById("topnav").style.box-shadow = "none";
+document.getElementById("topnav").style.box-shadow = "0";
  }
 }
 </script>
@@ -661,7 +661,7 @@ function showSlides(n) {
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 600) {
+	  if (scroll > 1) {
 	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #43cea2 , #815a98)");
 $("#topnav").css("animation", "gradient 6s ease infinite");
 	  }
