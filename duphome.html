@@ -81,7 +81,7 @@ animation:none;
 @keyframes move {
   50% {box-shadow: 5px 10px 15px black;}
 }
-@ keyframes gradient {
+@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -604,7 +604,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
-    document.getElementById("topnav").style.animation= "gradient  5s infinite";
+    document.getElementById("topnav").style.animation= "move 5s infinite, gradient  5s infinite";
     
     
     document.getElementById("logo").style.fontSize = "30px";
