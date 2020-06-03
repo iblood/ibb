@@ -77,7 +77,7 @@ border-top-left-radius:30px;
 
 background-size: 400% 400%;
 
-animation:gradient;
+animation:gradient 5s ease infinite;
 }
 
 
@@ -661,14 +661,14 @@ function showSlides(n) {
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 10) {
+	  if (scroll > 600) {
 	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #43cea2 , #815a98)");
-$("#topnav").css("animation", "gradient 6s ease infinite");
+$("#topnav").
 	  }
 
 	  else{
 		  $("#topnav").css("background" , "transparent");  	
-$("#topnav").css("animation","none");
+
 	  }
   })
 })
