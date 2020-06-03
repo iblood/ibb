@@ -86,19 +86,12 @@ background-size: 400% 400%;
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
-
-
-
-	}
+}
 	50% {
 		background-position: 100% 50%;
-
-
-
 }
-	100% {
+100% {
 		background-position: 0% 50%;
-
 }
 }
 #topnav a {
@@ -128,8 +121,13 @@ background-size: 400% 400%;
 	position:absolute;
 	margin:0px;
 	width:auto;
-   
+   animation: move 5s ease infinite;
 }
+
+@keyframes move {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
 .bg-img{
 background-image:url("Bloodcells.PNG");
 				min-height:700px;
@@ -614,10 +612,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
    document.getElementById("logo").style.fontSize = "30px";
-document.getElementById("topnav").style.box-shadow = "2px 4px 6px";
+
   } else {
     document.getElementById("logo").style.fontSize= "40px";
-document.getElementById("topnav").style.box-shadow = "0";
+
  }
 }
 </script>
