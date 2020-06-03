@@ -87,18 +87,18 @@ animation:none;
 	0% {
 		background-position: 0% 50%;
 
-box-shadow: 2.5px 5px 7.5px black;
+
 
 	}
 	50% {
 		background-position: 100% 50%;
 
-box-shadow: 5px 10px 15px black;
+
 
 }
 	100% {
 		background-position: 0% 50%;
-	box-shadow: 2.5px 5px 7.5px black;
+
 }
 }
 #topnav a {
@@ -614,10 +614,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
    document.getElementById("logo").style.fontSize = "30px";
-
+document.getElementById("topnav").style.box-shadow= "2px 4px 6px";
   } else {
     document.getElementById("logo").style.fontSize= "40px";
-
+document.getElementById("topnav").style.box-shadow= "0";
  }
 }
 </script>
