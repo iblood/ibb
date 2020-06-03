@@ -1,0 +1,729 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indo Blood - Home</title>
+<link rel="stylesheet" type="text/css" href="popup.css" />
+<link rel="icon" src="https://bit.ly/2ZRzPSW">
+<meta name="theme-color" content="#ff6347">
+  
+<meta name="msapplication-navbutton-color" content="#4285f4">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<style>
+body {
+  
+  margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+.mysidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ background-image: linear-gradient(to right, #000428 , #004e92);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mysidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.mysidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mysidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.mysidenav p{
+				font-size:20px;
+				color:white;
+				}
+	.mysidenav h1{
+Font-size:40px;
+Color:white;
+text-align:center;
+}
+							
+#topnav {
+overflow: hidden;
+  border-bottom-right-radius: 30px;
+border-top-left-radius:30px;
+  padding: 0px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+animation:none;
+}
+
+@keyframes move {
+  50% {box-shadow: 5px 10px 15px black;}
+}
+
+#topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#topnav #logo{
+  Font-size:40px;
+   Font-weight:bold;
+  transition: 0.4s;
+
+}
+
+
+
+#topnav-left {
+  float: left;
+}
+.topnav-container{
+				position:absolute;
+				margin:0px;
+				width:auto;
+				}
+.bg-img{
+background-image:url("Bloodcells.PNG");
+				min-height:700px;
+				background-position:center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				position: relative;
+}		
+
+.centered{
+   position: absolute;
+   left: 0;
+   top: 35%;
+   width: 100%;
+  text-align: center;
+   font-size: 25px;
+   Color:white;
+}
+
+
+#main {
+  transition: margin-left .5s;
+
+}
+.special {
+				background-image: linear-gradient(to right, #cc2b5e , #753a88);				
+				height:200px;}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+Border-radius:4px;
+animation: move 5s infinite;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button2{
+Background-color:white;
+Color:black;
+Border:2px solid #FFD700;
+}
+.button2:hover{
+Background-color:#FFD700;
+Color:white;
+}
+.container{ 
+Padding:10px;
+height:550px;
+Background-Color:white;
+
+}
+.container h1{
+font-size:22px;
+Text-align:center;
+Color:violet;
+font-family: 'Lobster', cursive;
+}
+.container p{
+Font-size:18px;
+Text-align:center;
+font-family: 'Roboto slab',serif;
+}
+
+
+
+/* Slides */
+.mySlides {
+  display: none;
+  text-align: center;
+
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #F1F1F1;
+  color: black;
+  float: right;
+}
+
+.round {
+  border-radius: 25%;
+   padding:10px;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.price {
+list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2)
+}
+
+.price:hover {
+  box-shadow: 6px 10px 18px 6px rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bar-container {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 81%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 9%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 6%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+
+.footer { 
+padding:10px;
+text-align:center;
+Background-color:deeppink;
+}
+.footer h2{
+color:white;
+font-size:19px;
+}
+.footer a{
+color:white;
+font-size:15px;
+}
+.footer p{
+color:white;
+font-size:15px;
+}
+.heart {
+  fill: deeppink;
+  position: relative;
+  top: 5px;
+  width: 80px;
+  animation: pulse 1s ease infinite;
+  }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+@media screen and (max-height:650px) {
+  .mysidenav {padding-top: 15px;}
+  .mysidenav a {font-size: 18px;}
+   .bg-img {min-height:650px}
+}
+   @media screen and (min-height:700px){
+.Container {height: 600px;}
+}
+.container:nth-child(odd){
+Background-color:#f1f1f1;
+}
+.container:nth-child(5){
+height:700px;
+}
+
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+.animate {
+  -webkit-animation: animatezoom 1.0s;
+  animation: animatezoom 1.0s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+</style>
+</head>
+<body>
+
+<div id="Sidenav" class="mysidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h1>Indo Blood</h1>
+<a href="search.html">Search</a>
+<a href="login.html">Login</a>
+<a href="bloodbanks.html">Blood Banks</a>
+<a href="aboutus.html">About Us</a>
+<a href="bbregistration.html">Blood Bank Registration </a>
+<a href="faq.html">Faq</a>
+<a href="contactus.html">Contact Us</a>
+<a href="gallery.html">Portfolio</a>
+
+<p>Social links</p>
+</div> <!---side nav div end ---!>
+
+<div id="main"> 
+<div class="bg-img">
+<div class="topnav-container">
+<div id="topnav"> 
+<a href="#default" id="logo">Indo Blood</a>
+<div id="topnav-left">
+<span id="span" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
+</div><!---topnav left div end---!>
+
+</div><!---topnav div end---!>
+
+
+</div><!---topnav container div end---!>
+
+  <div class="centered animate"><p>Join Our Community and,<br>Support Us To Save Lives</p>
+<a href="register.html"><button class="button button1">Join Us »</button></a><button class="button button2">Search »</button>
+
+</div><!---centred div end---!>
+
+
+
+
+</div><!---bg img div end---!>
+<div class="container">
+<h1>The Real Story</h1>
+<p>Most of the people who met severe accidents die,as blood was not available in time</p>
+<p> Blood donation refers to a practice where people donate their blood to people 
+So it helps them with their health problems. 
+Blood is one of the most essential fluids of our body that helps in the smooth functioning of our body. <br><br>
+If the body loses blood in excessive amounts, people to get deadly diseases and even die. Thus, we see how blood donation is literally life-saving which helps people. 
+It is also a sign of humanity that unites people irrespective of caste, creed, religion and more. </p>
+
+
+</div><!---div container  1 end---!>
+<div class="container"><h1>Why To Choose Us?</h1>
+<p>Indo Blood Offers , A Varient And Distinct User Experience.
+In The Fields Of Search And Registration.
+The Site Is Completely User Friendly, Allowing The Users To Go 
+Through Site Flexibly.<br><br>
+The Search Page Brings A New Experience To The Users, With Various Types Of
+Search Filters And Responses Very Simply.
+Enabling Users To Find Active Donors Quickly.<br> <br>
+The Registered Users Experiences Many Features, Which Were Never Felt.<br>i.e. Controling Their
+Status, General Information, Connecting To Search Requests And Marking With Their Location.
+
+
+</div><!---div container2end---!>
+<div class="container"><h1>Blood Banks</h1> 
+<p> Today, blood banks collect blood and separate it into its various components so they can be used most effectively according to the needs of the patient.<br>
+Red blood cells carry oxygen, platelets help the blood clot, and plasma has specific proteins that allow proper regulation of coagulation and healing. <br><br>
+Each unit of whole blood is separated into several components. Red blood cells may be stored under refrigeration for a maximum of 42 days, or frozen for up to 10 years. 
+Platelets are stored at room temperature and may be kept for a maximum of five to seven days. 
+Fresh frozen plasma is kept in a stored frozen state for up to one year. 
+
+</p>
+</div><!---div container 3end---!>
+
+<div class="container"><h1>Integrations</h1>
+<p>We Integrate All the User Data Safely Offering Privacy Features Not Seen Till</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+
+  <ul class="price">
+    <li class="header">Users</li>
+    <li class="grey">Data 100% Encripted</li>
+    <li>Full Privacy Secure</li>
+    <li>100% Free </li>
+    <li>Dashboard Control</li>
+    <li>Proxy And Inactive ✅</li>
+    <li class="grey">Bonus On Blood Donation 
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="mySlides">
+  <div class="intcolumn">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Search</li>
+    <li class="grey">100% Privacy</li>
+    <li>No Limit Search</li>
+    <li>Donor Details✅ </li>
+    <li>Various Filters</li>
+    <li>Blood Bank Data</li>
+    <li class="grey">Location Search</li>
+  </ul>
+</div>
+</div>
+
+
+
+<a class="previous round" onclick="plusSlides(-1)">❮</a>
+<a class="next round" onclick="plusSlides(1)">❯</a>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+
+
+</div><!---div container4end---!>
+<div class="container" style="background-image: linear-gradient(to right, #cc2b5e , #753a88);height:200px;">
+<h1>Hello</h1>
+<p>So Why Late Join Us And Help Us In Saving Lives.</p>
+</div>
+<div class="container" style="background-color: white;"><h1>Why Us At Top?</h1>
+<p>
+<svg class="heart " viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg>
+</p><p>Because Of User Satisfaction And Our Exclusive Features</p>
+<p><img src="lock.jpg" style="width:80px;height:100px;animation:pulse 1s ease infinite;"></p>
+<p>By Our 100% Privacy Protection</p>
+<p>
+<img src="service.jpg" style="width:80px; height:100px;animation:pulse 1s ease infinite;"></p>
+<p>Best Customer Service</p>
+</div><!---div container why us end---!>
+
+<div class="container" style="background-color:#f1f1f1"><h1>User Ratings</h1>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.5 Average based on 234 reviews.</p>
+<hr style="border:3px solid white">
+
+<div class="row">
+  <div class="side">
+<div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+<div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+<div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+</div><!--- div container 5 end---!>
+<div class="footer">
+<h2>Go To ...</h2>
+
+<a href="search.html">Search</a><br>
+
+
+<a href="about.html">About Us</a><br>
+
+<a href="faq.html">Faq</a><br>
+<a href="contactus.html">Contact Us</a><br>
+<a href="gallery.html">Portfolio</a><br>
+<p>Indo Blood Is Bound To Security Of User Data</p><br>
+<p>Indo Blood Is Made With Love And Care In India</p>
+</div><!---footer div end---!>
+
+</div><!---main div end---!>
+<div class="popbox">
+  <div class="dimmer"></div>
+
+  <div class="modal">
+    <div class="outgap">
+
+      <div class="workarea">
+        <div class="close_button">&times;</div>
+        <div style="text-align: center;"> 
+<video width="320" height="240" controls>
+  <source src="https://youtu.be/QbxGGVbXPIk" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  
+</video>        </div>
+
+        <form>
+          <input type="submit" style="position: absolute; left: -9999px" />
+
+            <h1 style="text-align: center;">CodeHim.com</h1>
+
+        </form>
+        <div style="text-align: center;"><a role="button" href="#" onClick="PopBox.hide(); return false;">Close</a></div>
+
+        <div class="close_msg" style="text-align: center;">Popup will be auto closed in <b class="close_countdown"></b> seconds.</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="popup.js" defer></script>
+<script>
+
+function openNav() {
+  document.getElementById("Sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+<script> 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
+ document.getElementById("logo").style.fontSize = "30px";
+ document.getElementById("topnav").style.animation = "move 5s ease infinite";
+  } else {
+ 
+ document.getElementById("logo").style.fontSize= "40px";
+document.getElementById("topnav").style.animation= "none";
+  }
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 650) {
+	    $("#topnav").css("background-image" , "linear-gradient(to right, #43cea2 , #815a98)");
+	  }
+
+	  else{
+		  $("#topnav").css("background-image" , "transparent");  	
+	  }
+  })
+})
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+// <![CDATA[
+wReady=function(f,w){var r=document.readyState;w||r!="loading"?r!="complete"?window.addEventListener("load",function(){f(3)}):f(3):document.addEventListener("DOMContentLoaded",function(){f(2)&&wReady(f)})}
+doInit=function(f,w){(w>1||(w&&document.readyState=="loading")||f(1))&&wReady(f,w>1)}
+// ]]>
+</script>
+<script>
+// <![CDATA[
+doInit(function() {
+  if (typeof $=="undefined") return 1;
+
+  PopBox.init({
+    auto_show: 60000,         // in milliseconds. 15000 milliseconds = 15 seconds. 0 = disabled.
+    auto_close: 90000,        // in milliseconds. 60000 = 60 seconds. 0 = disabled.
+    show_on_scroll_start: 48, // starting scroll position in percents, between 0% and 100%. Both 0 = disabled.
+    show_on_scroll_end: 52,   // ending scroll position. Eg 40..60 means that popbox will appear when any part of page between 40% and 60% is appeared in the viewport.
+    closeable_on_dimmer: true,
+    auto_start_disabled: false,
+  });
+}, 1);
+// ]]>
+</script>
+</body>
+</html>
