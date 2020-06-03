@@ -662,7 +662,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
  document.getElementById("logo").style.fontSize = "30px";
- document.getElementById("topnav").style.animation = "move 5s ease infinite, gradient 10s infinite";
+ document.getElementById("topnav").style.animation = "move 5s ease infinite, gradient 10s ease infinite";
   } else {
  
  document.getElementById("logo").style.fontSize= "40px";
@@ -730,8 +730,8 @@ doInit(function() {
   PopBox.init({
     auto_show: 60000,         // in milliseconds. 15000 milliseconds = 15 seconds. 0 = disabled.
     auto_close: 90000,        // in milliseconds. 60000 = 60 seconds. 0 = disabled.
-    show_on_scroll_start: 48, // starting scroll position in percents, between 0% and 100%. Both 0 = disabled.
-    show_on_scroll_end: 52,   // ending scroll position. Eg 40..60 means that popbox will appear when any part of page between 40% and 60% is appeared in the viewport.
+    show_on_scroll_start: 0, // starting scroll position in percents, between 0% and 100%. Both 0 = disabled.
+    show_on_scroll_end: 0,   // ending scroll position. Eg 40..60 means that popbox will appear when any part of page between 40% and 60% is appeared in the viewport.
     closeable_on_dimmer: true,
     auto_start_disabled: false,
   });
