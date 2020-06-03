@@ -607,9 +607,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
    document.getElementById("logo").style.fontSize = "30px";
-
+document.getElementById("topnav").style.animation = "gradient 5s ease infinite";
   } else {
     document.getElementById("logo").style.fontSize= "40px";
+document.getElementById("topnav"₹.style.animation = "none";
  }
 }
 </script>
@@ -655,7 +656,7 @@ $(document).ready(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 650) {
 	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #43cea2 , #815a98)");
-$("#topnav").css("animation", "move 5s ease infinite , gradient 5s infinite");
+$("#topnav").css("animation", "move 5s ease infinite");
 	  }
 
 	  else{
