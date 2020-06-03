@@ -110,9 +110,9 @@ select {
 
 
 <label for="states"><b>State</b></label>
- <select id="states" name="states" required>
+ <select id="groups" name="states" required>
 <option value=""></option>
-    <option value='Andhra pradesh'>Andhra pradesh</option>
+    <option value='Andhra_pradesh'>Andhra pradesh</option>
     <option value='Arunanchal pradesh'>Arunanchal pradesh</option>
     <option value='Assam'>Assam</option>
     <option value='Biharr'>Bihar</option>
@@ -143,14 +143,21 @@ select {
     <option value='West Bengal'>West Bengal</option>
 </select>
 <label for="district"><b>District</b></label>
- <select id="district" name="district" required>
-<option data-group='SHOW' value='0'>-- Select --</option>
-<option data-group='ap' value='anantapur'>anantapur</option><option data-group='ap' value='chittor'>chittor</option>
-<option data-group='ap' value='east godavari'>east godavari</option><option data-group='ap' value='west godavari'>west godavari</option>
-<option data-group='ap' value='guntur'>guntur</option><option data-group='ap' value='kadapa'>kadapa</option><option data-group='ap' value='krishna'>krishna</option>
-<option data-group='ap' value='kurnool'>kurnool</option><option data-group='ap' value='prakasam'>prakasam</option><option data-group='ap' value='nellore'>nellore</option>
-<option data-group='ap' value='srikakulam'>srikakulam</option><option data-group='ap' value='vishakapatnam'>vishakapatnam</option>
-<option data-group='ap' value='viziangaram'>viziangaram</option>  </select>
+ <select id="sub_groups" name="district" required>
+<option data-group='SHOW' value=''></option>
+<option data-group='Andhra_pradesh' value='anantapur'>anantapur</option>
+<option data-group='Andhra_pradesh' value='chittor'>chittor</option>
+<option data-group='Andhra_pradesh' value='east godavari'>east godavari</option>
+<option data-group='Andhra_pradesh' value='west godavari'>west godavari</option>
+<option data-group='Andhra_pradesh' value='guntur'>guntur</option>
+<option data-group='Andhra_pradesh' value='kadapa'>kadapa</option>
+<option data-group='Andhra_pradesh' value='krishna'>krishna</option>
+<option data-group='Andhra_pradesh' value='kurnool'>kurnool</option>
+<option data-group='Andhra_pradesh' value='prakasam'>prakasam</option>
+<option data-group='Andhra_pradesh' value='nellore'>nellore</option>
+<option data-group='Andhra_pradesh' value='srikakulam'>srikakulam</option>
+<option data-group='Andhra_pradesh' value='vishakapatnam'>vishakapatnam</option>
+<option data-group='Andhra_pradesh' value='viziangaram'>viziangaram</option>  </select>
       
 
 
@@ -178,5 +185,31 @@ select {
       </div>
     </div>
   </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(function(){
+    $('#groups').on('change', function(){
+        var val = $(this).val();
+        var sub = $('#sub_groups');
+        $('option', sub).filter(function(){
+            if (
+                 $(this).attr('data-group') === val 
+              || $(this).attr('data-group') === 'SHOW'
+            ) {
+              if ($(this).parent('span').length) {
+                $(this).unwrap();
+              }
+            } else {
+              if (!$(this).parent('span').length) {
+                $(this).wrap( "<span>" ).parent().hide();
+              }
+            }
+        });
+    });
+    $('#groups').trigger('change');
+});
+</script>
+
   </body>
 </html>
