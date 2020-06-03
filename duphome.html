@@ -80,16 +80,17 @@ background-size: 400% 400%;
 animation:none;
 }
 
-@keyframes move {
-  50% {box-shadow: 5px 10px 15px black;}
-}
+
+ 
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
 	50% {
 		background-position: 100% 50%;
-	}
+box-shadow: 5px 10px 15px black;
+}
 	100% {
 		background-position: 0% 50%;
 	}
@@ -656,7 +657,7 @@ $(document).ready(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 600) {
 	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #43cea2 , #815a98)");
-$("#topnav").css("animation", "gradient 6s ease infinite , move 5s ease infinite");
+$("#topnav").css("animation", "gradient 6s ease infinite");
 	  }
 
 	  else{
