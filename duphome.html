@@ -75,7 +75,7 @@ border-top-left-radius:30px;
   top: 0;
   z-index: 99;
  background:transparent;
-    animation: gradienter 16s linear infinite;
+   
    
 background-size:100% 100%;
 }
@@ -615,7 +615,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
    document.getElementById("logo").style.fontSize = "30px";
-document.getElementById("topnav").style.animation ="move 5s ease infinite";
+document.getElementById("topnav").style.animation ="gradient 16s linear infinite, move 5s ease infinite";
   } else {
     document.getElementById("logo").style.fontSize= "40px";
 document.getElementById("topnav").style.animation="none";
