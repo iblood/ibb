@@ -74,12 +74,15 @@ border-top-left-radius:30px;
   width: 100%;
   top: 0;
   z-index: 99;
-
-background-size: 400% 400%;
-
-
+ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradienter 16s linear infinite;
+    animation-direction: alternate;
 }
-
+@keyframes gradienter {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
 
  
 
