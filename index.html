@@ -72,7 +72,7 @@ border-top-left-radius:30px;
   top: 0;
   z-index: 99;
 animation:none;
-background-size: 400% 400%;
+background-size: 100% 100%;
 }
 
 @keyframes move {
@@ -662,7 +662,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
  document.getElementById("logo").style.fontSize = "30px";
- document.getElementById("topnav").style.animation = "move 5s ease infinite, gradient 10s ease infinite";
+ document.getElementById("topnav").style.animation = "move 5s ease infinite, gradient 20s ease infinite";
   } else {
  
  document.getElementById("logo").style.fontSize= "40px";
@@ -678,12 +678,14 @@ $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 650) {
-	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #43cea2 , #815a98)");
-	  }
+	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #815a98 , #43cea2 , #2193b0 , #6dd5ed , #2193b0 , #6dd5ed , #7b4397 , #dc2430 , #bdc3c7, #2c3e50 , #2c3e50 , #bdc3c7)");
+	$("#topnav").css("background-size" , "1400% 100%");
+  }
 
 	  else{
 		  $("#topnav").css("background" , "transparent");  	
-	  }
+	  $("#topnav").css("background-size" , "100% 100%");
+}
   })
 })
 </script>
