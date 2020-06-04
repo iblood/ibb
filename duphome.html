@@ -76,7 +76,7 @@ border-top-left-radius:30px;
   z-index: 99;
  background:transparent;
     animation: gradienter 16s linear infinite;
-    animation-direction: alternate;
+   
 background-size:100% 100%;
 }
 @keyframes gradienter {
@@ -615,10 +615,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
    document.getElementById("logo").style.fontSize = "30px";
-
+document.getElementById("topnav").style.animation ="move 5s ease infinite";
   } else {
     document.getElementById("logo").style.fontSize= "40px";
-
+document.getElementById("topnav").style.animation="none";
  }
 }
 </script>
@@ -665,13 +665,13 @@ $(document).ready(function(){
 	  if (scroll > 600) {
 	    $("#topnav").css("background-image", "linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)");
 $("#topnav").css("background-size", "600% 100%");
-$("#topnsv").css("animation", "gradienter 16s linear infinite, move 5s ease infinite");
+
 	  }
 
 	  else{
 		  $("#topnav").css("background" , "transparent");  	
 $("#topnav").css("background-size", "100% 100%");
-$("#topnav").css("animation", "gradienter 16s linear infinite");
+
 	  }
   })
 })
