@@ -77,7 +77,7 @@ border-top-left-radius:30px;
  background:transparent;
     animation: gradienter 16s linear infinite;
     animation-direction: alternate;
-background-size:600% 100%;
+background-size:100% 100%;
 }
 @keyframes gradienter {
     0% {background-position: 0%}
@@ -664,12 +664,12 @@ $(document).ready(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 600) {
 	    $("#topnav").css("background-image", "linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)");
-
+$("#topnav").css("background-size", "600% 100%");
 	  }
 
 	  else{
 		  $("#topnav").css("background" , "transparent");  	
-
+$("#topnav").css("background-size", "100% 100%");
 	  }
   })
 })
