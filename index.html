@@ -209,9 +209,9 @@ text-align:left;
 font-size:60px;
   fony-spacing:10px;
 font-weight:bold;
-}
-. Slides .p{
-font-size:25px;
+} 
+.Slides .p{
+Font-size:25px;
  font-family: 'Roboto slab',serif;
 text-align:center;
 }
@@ -665,7 +665,7 @@ function closeNav() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 645 || document.documentElement.scrollTop > 645) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 645) {
  document.getElementById("logo").style.fontSize = "30px";
  document.getElementById("topnav").style.animation = "move 5s ease infinite, gradient 20s ease infinite";
   } else {
@@ -682,7 +682,7 @@ document.getElementById("topnav").style.animation= "none";
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 650) {
+	  if (scroll > 601) {
 	    $("#topnav").css("background-image", "linear-gradient(to right, #43cea2 , #815a98 , #815a98 , #43cea2 , #2193b0 , #6dd5ed , #2193b0 , #6dd5ed , #7b4397 , #dc2430 , #bdc3c7, #2c3e50 , #2c3e50 , #bdc3c7)");
 	$("#topnav").css("background-size" , "1400% 100%");
   }
