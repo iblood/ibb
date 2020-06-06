@@ -199,6 +199,34 @@ Text-align:center;
 font-family: 'Roboto slab',serif;
 }
 
+.testimonials{
+text-align:center;
+font-spacing:4px;
+font-size:40px;
+}
+.qmark{
+text-align:left;
+font-size:60px;
+  fony-spacing:10px;
+font-weight:bold;
+}
+. Slides p{
+Font-size:25px;
+ font-family: 'Roboto slab',serif;
+text-align:center;
+}
+.Slides .author{
+font-size:20px;
+font-weight:bold;
+text-align:right;
+} 
+
+
+
+/* Slides */
+.Slides {
+  display: none;
+  }
 .columns {
   padding: 8px;
    width:50%;
@@ -220,7 +248,7 @@ font-family: 'Roboto slab',serif;
 
  
 .special .header {
-  padding:20px;
+  padding:20px,15px;
   color:deeppink;
   font-size: 25px;
   text-align:center;
@@ -229,14 +257,14 @@ font-family: 'Roboto slab',serif;
 .special .li {
   border-bottom: 0.5px solid #FF00FF;
   
-  padding: 20px;
+  padding: 20px,15px;
   text-align: center;
   
 }
 
 .special .grey {
   background-color: #eee;
-  font-size: 20px;
+  font-size: 20px,15px;
   padding:20px;
   text-align:center;
 }
@@ -325,7 +353,7 @@ font-size:15px;
 Background-color:#f1f1f1;
 }
 .container:nth-child(5){
-height:1500px;
+height:1000px;
 }
 
 @media (max-width: 400px) {
@@ -432,6 +460,36 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
 </p>
 </div><!---div container 3end---!>
 
+<div class="container" style="background-image: linear-gradient(to right, #cc2b5e , #753a88,#753a88,#cc2b5e); animation:gradient 5s ease infinite;height:400px;">
+  <div class="testimonials">Testimonials</div>
+  <div class="qmark">❝</div>
+  <div class="slideshow-container">
+
+<div class="Slides fade">
+  
+  <p>Indo Blood was very useful for the persons who had an immediate need of blood. And we hope it serves many.</p>
+  
+  <div class="author">-Manoj<br>Ceo & Founder</div>
+  </div>
+  
+  
+
+<div class="Slides fade">
+  <p>We designed the site to offer  friendliness and Easy navigations, which of  this kind of Websites.</p>
+  <div class="author">Balu<br>-Co founder & Designer</div>
+  
+</div>
+    
+
+<div class="Slides fade">
+  <p>I have got into site, I was with a little bit  of suspicion. But when I used  it I felt the flexibility  of the site</p>
+ <div class="author">-Hari <br>User</div>
+
+  </div>
+
+</div>
+  </div>
+
 <div class="container"><h1>Integrations</h1>
 <p>We Integrate All the User Data Safely Offering Privacy Features Not Seen Till</p>
 <div class="columns">
@@ -459,11 +517,7 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
   </ul>
 </div>
 
-</div><!---div container4end---!>
-<div class="container" style="background-image: linear-gradient(to right, #cc2b5e , #753a88);height:200px;">
-<h1>Hello</h1>
-<p>So Why Late Join Us And Help Us In Saving Lives.</p>
-</div>
+</div><!---div container integrate features end---!>
 <div class="container" style="background-color: white;"><h1>Why Us At Top?</h1>
 <p>
 <svg class="heart " viewBox="0 0 32 29.6">
@@ -639,33 +693,24 @@ $(document).ready(function(){
   })
 })
 </script>
-
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+var slideIndex = 0;
+showSlides();
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  var slides = document.getElementsByClassName("Slides");
+  
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  
+  setTimeout(showSlides, 5000); 
 }
 </script>
 <script>
