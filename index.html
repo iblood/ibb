@@ -201,101 +201,63 @@ Text-align:center;
 font-family: 'Roboto slab',serif;
 }
 
-
-
-/* Slides */
-.mySlides {
-  display: none;
-  text-align: center;
-
+.columns {
+  padding: 8px;
 }
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.next {
-  background-color: #F1F1F1;
-  color: black;
-  float: right;
-}
-
-.round {
-  border-radius: 25%;
-   padding:10px;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    
-
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.price {
-list-style-type: none;
-  border: 1px solid #eee;
+.special {
+  
+  list-style-type: none;
+  border: 1px solid #9400D3;
   margin: 0;
-  padding: 15px;
+  padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2)
+  border-top-right-radius:25px;
+  border-top-left-radius:25px;
+  border-bottom-right-radius:25px;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 }
 
-.price:hover {
-  box-shadow: 6px 10px 18px 6px rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
+ 
+.special .header {
+  padding:20px;
+  color:deeppink;
   font-size: 25px;
-}
+  text-align:center;
+ }
 
-.price li {
-  border-bottom: 1px solid #eee;
+.special .li {
+  border-bottom: 0.5px solid #FF00FF;
+  
   padding: 20px;
   text-align: center;
+  
 }
 
-.price .grey {
+.special .grey {
   background-color: #eee;
   font-size: 20px;
+  padding:20px;
+  text-align:center;
 }
+
+
 
 .checked {
   color: orange;
 }
 
-/* Three column layout */
 .side {
   float: left;
   width: 15%;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .middle {
-  margin-top:10px;
   float: left;
   width: 70%;
+  margin-top: 10px;
 }
 
 /* Place text to the right */
@@ -467,49 +429,30 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
 
 <div class="container"><h1>Integrations</h1>
 <p>We Integrate All the User Data Safely Offering Privacy Features Not Seen Till</p>
-
-<div class="slideshow-container">
-
-<div class="mySlides">
-
-  <ul class="price">
+< div class="columns">
+  
+<ul class="special">
     <li class="header">Users</li>
-    <li class="grey">Data 100% Encripted</li>
-    <li>Full Privacy Secure</li>
-    <li>100% Free </li>
-    <li>Dashboard Control</li>
-    <li>Proxy And Inactive ✅</li>
-    <li class="grey">Bonus On Blood Donation 
+    <li class="grey">100 % Data Encryption</li>
+    <li class="li">Privacy Security</li>
+    <li class="li">Free To Manage </li>
+    <li class="li">Dashboard &  Controls</li>
+    <li class="li">Proxy, Inactive, Active Options</li>
+    <li class="li" style="border-bottom:none;">Bonus On Blood Donation
     </li>
+ </ul>
+</div>
+<div class="columns">
+  <ul class="special">
+    <li class="header">Search</li>
+    <li class="grey">Full Privacy</li>
+    <li class="li">Easy Search Implementations</li>
+    <li class="li">Donor Details</li>
+    <li class="li">Various Search Filters</li>
+    <li class="li">Blood Banks Data</li>
+    <li class="li" style="border-bottom:none;">Location Based Search</li>
   </ul>
 </div>
-</div>
-
-<div class="mySlides">
-  <div class="intcolumn">
-  <ul class="price">
-    <li class="header" style="background-color:#4CAF50">Search</li>
-    <li class="grey">100% Privacy</li>
-    <li>No Limit Search</li>
-    <li>Donor Details✅ </li>
-    <li>Various Filters</li>
-    <li>Blood Bank Data</li>
-    <li class="grey">Location Search</li>
-  </ul>
-</div>
-</div>
-
-
-
-<a class="previous round" onclick="plusSlides(-1)">❮</a>
-<a class="next round" onclick="plusSlides(1)">❯</a>
-
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span>
-</div>
-
-
 
 </div><!---div container4end---!>
 <div class="container" style="background-image: linear-gradient(to right, #cc2b5e , #753a88);height:200px;">
