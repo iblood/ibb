@@ -405,15 +405,16 @@ height:700px;
 <p>Social links</p>
 </div> <!---side nav div end ---!>
 
-<div id="main"> 
+<div class="main">
 <div class="bg-img">
 <div class="topnav-container">
 <div id="topnav"> 
 <a href="#default" id="logo">Indo Blood</a>
+</div>
 <div id="topnav-left">
 <span id="span" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
 </div><!---topnav left div end---!>
-
+<div class="main">
 </div><!---topnav div end---!>
 
 
@@ -594,17 +595,23 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
 
 </div><!---main div end---!>
 
-
+<script>
+document.querySelector('span#open_menu').addEventListener('click', function(){ openNav(); }) 
+document.querySelector('. closebtn').addEventListener('click', function(){ closeNav(); })
+document.querySelector('.main').addEventListener('click', closeNav(); })
+</script>
 <script>
 
 function openNav() {
   document.getElementById("Sidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+document.getElementById("topnav").style.marginLeft = "250px";
 }
 
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("topnav").style.marginLeft = "0";
+document.getElementById("topnav").style.marginLeft = "0";
 }
 
 </script>
