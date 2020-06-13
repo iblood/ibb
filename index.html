@@ -312,11 +312,11 @@ color:white;
 }
 
 /* Individual bars */
-.bar-5 {width: 81%; height: 18px; background-color: #4CAF50;}
-.bar-4 {width: 9%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 6%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+.bar-5 {width: 81%; height: 18px; background-color: #4CAF50; border:1px solid black;}
+.bar-4 {width: 9%; height: 18px; background-color: #2196F3; border:1px solid black;}
+.bar-3 {width: 6%; height: 18px; background-color: #00bcd4; border:1px solid black;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800; border:1px solid black;}
+.bar-1 {width: 0%; height: 18px; background-color: #f44336; border:1px solid black;}
 
 .footer { 
 padding:10px;
@@ -355,7 +355,7 @@ font-size:15px;
    @media screen and (min-height:700px){
 .Container {height: 600px;}
 }
-.container:nth-child(odd){
+.container:nth-child(even){
 Background-color:#f1f1f1;
 }
 .container:nth-child(4){
@@ -542,12 +542,13 @@ Fresh frozen plasma is kept in a stored frozen state for up to one year.
 </div><!---div container why us end---!>
 
 <div class="container" style="background-color:#f1f1f1"><h1>User Ratings</h1>
-
+<div style="text-align:center;">
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
+</div>
 <p>4.5 Average based on 234 reviews.</p>
 <hr style="border:3px solid white">
 
