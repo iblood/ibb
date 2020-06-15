@@ -162,16 +162,22 @@ select {
 
 
 <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="email" placeholder="Enter Email" name="email" required>
 
 <label for="Pnumber"><b>Phone Number </b></label>
-      <input type="text" placeholder="Enter Phone Number" name="pnumber" required>
+      <input type="number" placeholder="Enter Phone Number" name="pnumber" required>
 
 <label for="cuname"><b>Custom User Name</b></label>
-      <input type="text" placeholder="Please Choose A fictious Name" name="cuname" required>
+      <input type="text" min="10" max="10" placeholder="Please Choose A fictious Name" name="cuname" required>
 
 <label for="address"><b>Address</b></label>
       <input type="text" placeholder="H:no/Street Name/colony/(city)(village)" name="address" required>
+
+<label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Create your password" name="password" required>
+
+<label for="cpassword"><b>Confirm Your Password</b></label>
+      <input type="password" placeholder="Confirm your password" name="cpassword" required>
 
 <label>
         <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
