@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Join Us | Indo Blood</title>
+<title>Join s | Indo Blood</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link real="icon" href="iblood.github.io/logo.png" type="image/x-icon"> 
 
@@ -232,22 +232,6 @@ $(function(){
     });
     $('#groups').trigger('change');
 });
-</script>
-<script>
-var password = document.getElementById("password")
-var confirm_password = document.getElementById("confirm_password");
-
-
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
 </script>
 <script>
 document.querySelector('i').addEventListener('click', function(){ toggleFunction(); })
