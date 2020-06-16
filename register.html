@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Join s | Indo Blood</title>
+<title>Join Us | Indo Blood</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link real="icon" href="iblood.github.io/logo.png" type="image/x-icon"> 
 
@@ -237,14 +237,35 @@ $(function(){
 document.querySelector('i').addEventListener('click', function(){ toggleFunction(); })
 </script>
 <script>
-var toggle = document.getElementById("i")
+var toggler = document.getElementById("i")
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
   } else {
     password.type = "password";
   }
+
+toggler.classList.toggle("fa-eye-slash");
+}
 }
 </script>
+
+<script>
+var password = document.getElementById("password")
+var confirm_password = document.getElementById("confirm_password");
+
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+
   </body>
 </html>
