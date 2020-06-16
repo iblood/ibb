@@ -46,12 +46,12 @@ input[type=tel]:focus,
 input[type=email]:focus{
   background-color: #ddd;
   outline: none;
-border:0.7px solid pink;
+border:0.7px solid green;
 }
 input[type=password]:focus{
 background-color:#ddd;
 outline:none;
-border:0.7px solid red;
+border:0.7px solid green;
 width:95%;
 }
 hr {
@@ -243,7 +243,7 @@ $(function(){
 document.querySelector('i').addEventListener('click', function(){ toggleFunction(); })
 </script>
 <script>
-var pass = document.getElementById("password");
+var pass = document.getElementsByTagName("i");
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
