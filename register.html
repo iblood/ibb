@@ -9,7 +9,7 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: deeppink;
+  background-color: linear-gradient(to bottom,deeppink , green);
 }
 
 * {
@@ -244,16 +244,19 @@ document.querySelector('i').addEventListener('click', function(){ toggleFunction
 </script>
 <script>
 
-var pass = document.getElementId("password");
+var pass = document.getElementById("password");
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
      pass.style.width = "95%";
-
+     pass.classList.remove("far fa-eye");
+pass.classList.add("far fa-eye-slash");
   } else {
     password.type = "password";
     pass.style.width = "95%";
-  }
+    pass.classList.remove("far fa-eye-slash");
+    pass.classList.add("far fa-eye");
+ }
 }
 </script>
 
