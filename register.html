@@ -34,7 +34,7 @@ input[type=text],input[type=email],input[type=tel] {
   background: #f1f1f1;
 }
 input[type=password]{
-width: 95%;
+width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -47,7 +47,7 @@ input[type=email]:focus,
 input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-border:0.7px green;
+border:0.7px solid green;
 }
 hr {
   border: 1px solid #f1f1f1;
@@ -242,10 +242,10 @@ var pass = document.getElementsByTagName("i")
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
-pass.className = "fa-eye-slash";
+pass.className += " far fa-eye-slash";
   } else {
     password.type = "password";
-    pass.className = "far fa-eye";
+pass.className += "far fa-eye";
   }
 }
 }
