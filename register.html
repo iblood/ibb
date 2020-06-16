@@ -47,6 +47,7 @@ input[type=email]:focus,
 input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+border:0.7px green;
 }
 hr {
   border: 1px solid #f1f1f1;
@@ -237,14 +238,14 @@ $(function(){
 document.querySelector('i').addEventListener('click', function(){ toggleFunction(); })
 </script>
 <script>
-
+var pass = document.getElementsByTagName("i")
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
-document.getElementsByTagName("i").className = "far fa-eye-slash";
+pass.className = "fa-eye-slash";
   } else {
     password.type = "password";
-    document.getElementsByTagName("i").className = "far fa-eye";
+    pass.className = "far fa-eye";
   }
 }
 }
