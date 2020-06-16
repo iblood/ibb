@@ -183,10 +183,10 @@ select {
       <input type="text" placeholder="H:no/Street Name/colony/(city)(village)" name="address" required>
 
 <label for="password"><b>Create Your Password</b></label>
-      <input type="password" minlength="8" placeholder="Create your password" name="password" required>
+      <input type="password" minlength="8" id="password"  placeholder="Create your password" name="password" required>
 
 <label for="cpassword"><b>Confirm Your Password</b></label>
-      <input type="password" minlength="8"  placeholder="Confirm your password" name="cpassword" required>
+      <input type="password" minlength="8" id="confirm_password" placeholder="Confirm your password" name="cpassword" required>
 <label>
         <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
       </label>
@@ -195,7 +195,7 @@ select {
 
       <div class="clearfix">
    <p>     Terminate and go to <a href="iblood.github.io">Home</a></p>
-        <button type="registerbtn" class="registerbtn">Sign Up</button>
+        <button type="submit" class="registerbtn">Sign Up</button>
       </div>
     </div>
   </form>
@@ -223,6 +223,20 @@ $(function(){
     $('#groups').trigger('change');
 });
 </script>
+<script>
+var password = document.getElementById("password")
+var confirm_password = document.getElementById("confirm_password");
 
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validateP
+</script>
   </body>
 </html>
