@@ -8,12 +8,14 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 
 <style>
-body {font-family: Arial, Helvetica, sans-serif;
+body {font-family: Arial, Helvetica, sans-serif;}
+.main{
 background-image: linear-gradient(to bottom ,#2193b0 ,#6dd5ed);
+width:100%;
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=tel], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -64,21 +66,6 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
 }
 
 /* Modal Content/Box */
@@ -140,36 +127,15 @@ Width: 40%;
 </head>
 <body>
 
-
+<div class="main">
   
   <form class="modal-content animate" action="iblood.github.io/process.php" method="post">
     <div class="imgcontainer">
           <img src="https://bit.ly/2ZRzPSW"alt="Avatar" class="avatar"
-    </div>
-
-<?php 
-                        if(@$_GET['Empty']==true)
-                        {
-                    ?>
-                        <div class="alert-light text-danger text-center py-3"><?php echo $_GET['Empty'] ?></div>                                
-                    <?php
-                        }
-                    ?>
- 
- 
-                    <?php 
-                        if(@$_GET['Invalid']==true)
-                        {
-                    ?>
-                        <div class="alert-light text-danger text-center py-3"><?php echo $_GET['Invalid'] ?></div>                                
-                    <?php
-                        }
-                    ?>
- 
-
-    <div class="container">
-      <label for="cuname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="cuname" required>
+    </div>  
+ <div class="container">
+      <label for="pnumber"><b>Phone Number</b></label>
+      <input type="tel" placeholder="Enter Phone Number" name="pnumber" required>
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
@@ -188,7 +154,7 @@ Width: 40%;
 </div>
 
 
-
+</div>
 </body>
 </html>
 
