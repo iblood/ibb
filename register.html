@@ -9,7 +9,7 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to bottom,deeppink , red);
+  background-image: linear-gradient(to bottom,green , red);
 }
 
 * {
@@ -250,12 +250,17 @@ function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
      pass.style.width = "95%";
-      pass.className = "fa fa-eye-slash";
-  } else {
+ } else {
     password.type = "password";
     pass.style.width = "95%";
-   pass.className = "fa fa-eye";
- }
+   }
+
+if (pass.className === "fa fa-eye") {
+pass.className = "fa fa-eye-slash";
+  } else {
+    pass.className = "fa fa-eye";
+  }
+
 }
 </script>
 
