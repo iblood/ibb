@@ -46,7 +46,7 @@ input[type=tel]:focus,
 input[type=email]:focus{
   background-color: #ddd;
   outline: none;
-border:0.7px solid red;
+border:0.7px solid pink;
 }
 input[type=password]:focus{
 background-color:#ddd;
@@ -253,6 +253,9 @@ function toggleFunction(){
     password.type = "password";
     pass.style.width = "95%";
   }
+
+pass.classList.toggle("fa-eye-slash");
+
 }
 </script>
 
