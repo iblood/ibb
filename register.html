@@ -124,10 +124,10 @@ select {
     <option value='Andhra_pradesh'>Andhra pradesh</option>
     <option value='Arunanchal pradesh'>Arunanchal pradesh</option>
     <option value='Assam'>Assam</option>
-    <option value='Biharr'>Bihar</option>
-    <option value='Chattisgarhg'>Chattisgarh</option>
-    <option value='Goaoa'>Goa</option>
-    <option value='Gujarath'>Gujarath</option>
+    <option value='Bihar'>Bihar</option>
+    <option value='Chattisgar'>Chattisgar</option>
+    <option value='Goa'>Goa</option>
+    <option value='Gujarat'>Gujarat</option>
     <option value='Haryana'>Haryana</option>
     <option value='Himachal pradesh'>Himachal Pradesh</option>
     <option value='Jammu&Kashmir'>Jammu&Kashmir</option>
@@ -174,19 +174,19 @@ select {
       <input type="email" placeholder="Enter Email" name="email" required>
 
 <label for="Pnumber"><b>Phone Number </b></label>
-      <input type="number" min="10" max="10"  placeholder="Enter Phone Number" name="pnumber" required>
+      <input type="tel" minlength="10" maxlength="10"  placeholder="Enter Phone Number" name="pnumber" required>
 
 <label for="cuname"><b>Custom User Name</b></label>
-      <input type="text" placeholder="Please Choose A fictious Name" name="cuname" required>
+      <input type="text" minlength="6" placeholder="Please Choose A fictious Name" name="cuname" required>
 
 <label for="address"><b>Address</b></label>
       <input type="text" placeholder="H:no/Street Name/colony/(city)(village)" name="address" required>
 
 <label for="password"><b>Create Your Password</b></label>
-      <input type="password" placeholder="Create your password" name="password" required>
+      <input type="password" minlength="8" placeholder="Create your password" name="password" required>
 
 <label for="cpassword"><b>Confirm Your Password</b></label>
-      <input type="password" placeholder="Confirm your password" name="cpassword" required>
+      <input type="password" minlength="8"  placeholder="Confirm your password" name="cpassword" required>
 <label>
         <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
       </label>
