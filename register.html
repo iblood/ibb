@@ -244,17 +244,17 @@ document.querySelector('i').addEventListener('click', function(){ toggleFunction
 </script>
 <script>
 
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password
+var pass = document.getElementsByTagName("i");
+function toggleFunction(){
+  if (password.type === "password") {
+    password.type = "text";
+     pass.style.width = "95%";
 
-togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye slash icon
-    this.classList.toggle('fa-eye-slash');
-});
-
+  } else {
+    password.type = "password";
+    pass.style.width = "95%";
+  }
+}
 </script>
 
 <script>
