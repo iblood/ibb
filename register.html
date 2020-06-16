@@ -34,7 +34,7 @@ input[type=text],input[type=email],input[type=tel] {
   background: #f1f1f1;
 }
 input[type=password]{
-width: 100%;
+width: 95%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -237,15 +237,15 @@ $(function(){
 document.querySelector('i').addEventListener('click', function(){ toggleFunction(); })
 </script>
 <script>
-var toggler = document.getElementById("i")
+
 function toggleFunction(){
   if (password.type === "password") {
     password.type = "text";
+document.getElementsByTagName("i").className = "far fa-eye-slash";
   } else {
     password.type = "password";
+    document.getElementsByTagName("i").className = "far fa-eye";
   }
-
-toggler.classList.toggle("fa-eye-slash");
 }
 }
 </script>
