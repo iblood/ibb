@@ -17,6 +17,11 @@ background-image: linear-gradient(to bottom ,#2193b0 ,#6dd5ed);
 width:100%;
 }
 
+.container i {
+    margin-left: -30px;
+    cursor: pointer;
+    color:deeppink;
+
 /* Full-width input fields */
 input[type=tel], input[type=password] {
   width: 100%;
@@ -96,6 +101,10 @@ span.psw {
   cursor: pointer;
 }
 
+.fa, .far, .fas {
+    display: inline;
+}
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -143,7 +152,7 @@ Width: 40%;
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
-        
+        <i id="togglePassword" class="far fa-eye"></i>
       <button type="submit">Login</button>
       <label>
         <input type="checkbox" name="remember"> Remember me
@@ -156,9 +165,18 @@ Width: 40%;
     </div>
   </form>
 </div>
-
-
 </div>
+
+<script>
+  const togglePassword = document.querySelector('#togglePassword');
+    var password = document.querySelector('#password');
+ togglePassword.addEventListener('click' ,function(e)
+  				{var type = password.getAttribute('type') === 'password' ? 'text' : 'password' ;
+  				password.setAttribute('type' ,type);
+  				this.classList.toggle('fa-eye-slash');
+  				});
+ </script> 
+
 </body>
 </html>
 
