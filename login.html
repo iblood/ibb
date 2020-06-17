@@ -1,12 +1,9 @@
-
 <!DOCTYPE html>
-
 <html>
 <head>
+<title>Login | Indo Blood</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="css/bootstrap.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <style>
 body {
 font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +14,7 @@ background-image: linear-gradient(to bottom ,#2193b0 ,#6dd5ed);
 width:100%;
 }
 
-.container i {
+#togglePassword{
     margin-left: -30px;
     cursor: pointer;
     color:deeppink;
@@ -151,7 +148,7 @@ Width: 40%;
       <input type="tel" placeholder="Enter Phone Number" name="pnumber" required>
 
       <label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" required>
+      <input id="password" type="password" placeholder="Enter Password" name="password" required>
         <i id="togglePassword" class="far fa-eye"></i>
       <button type="submit">Login</button>
       <label>
