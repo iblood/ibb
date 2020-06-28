@@ -30,20 +30,19 @@ body{
 	animation: bot-to-top 2s ease-out;
 }
 
-ul{
+.1{
 	position:fixed;
 	right:40px;
 	padding-bottom:20px;
 	bottom:80px;
 	z-index:100;
 }
-
-ul li{
+.1 .2{
 	list-style:none;
 	margin-bottom:10px;
 }
 
-ul li a{
+.1 .2 a{
 	background-color:#F33;
 	color:#FFF;
 	border-radius:50px;
@@ -54,7 +53,7 @@ ul li a{
 	display:block;
 }
 
-ul:hover{
+.1:hover{
 	visibility:visible!important;
 	opacity:1!important;
 }
@@ -108,14 +107,14 @@ a#menu-share:hover > i{
 <a href="#" class="float" id="menu-share">
 <i class="fa fa-share my-float"></i>
 </a>
-<ul>
-<li><a href="#" id="menu-facebook">
-<i class="fa fa-facebook my-float"></i>
+<ul class='1'>
+<li class='2'><a href="#" id="menu-facebook">
+<i class="fa fa-facebook my-float">i</i>
 </a></li>
-<li><a href="#" id="menu-google-plus">
+<li class='2' ><a href="#" id="menu-google-plus">
 <i class="fa fa-google-plus my-float"></i>
 </a></li>
-<li><a href="#" id="menu-twitter">
+<li class='2' ><a href="#" id="menu-twitter">
 <i class="fa fa-twitter my-float"></i>
 </a></li>
 </ul>
