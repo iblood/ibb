@@ -15,19 +15,19 @@ body {
   color: #fff;
 }
 .sbuttons {
-  bottom: 5%;
+  bottom: 20px;
   position: fixed;
-  margin: 1em;
+  margin: 5px;
   right: 0;
 }
 .sbutton {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   color: white;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   -webkit-transition: all .1s ease-out;
@@ -35,8 +35,8 @@ body {
   position: relative;
 }
 .sbutton > i {
-  font-size: 38px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 40px;
   transition: all .2s ease-in-out;
   transition-delay: 2s;
 }
@@ -46,21 +46,21 @@ body {
   box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
 .sbutton:not(:last-child) {
-  width: 60px;
-  height: 60px;
-  margin: 20px auto 0;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto 0;
   opacity: 0;
 }
 .sbutton:not(:last-child) > i {
-  font-size: 25px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 50px;
   transition: all .3s ease-in-out;
 }
 .sbuttons:hover .sbutton:not(:last-child) {
   opacity: 1;
-  width: 60px;
-  height: 60px;
-  margin: 15px auto 0;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto 0;
 }
 .sbutton:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
