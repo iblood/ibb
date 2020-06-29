@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	}
+}
+
+.icon-collapse{
+	&::before{
+		border-radius: 0;
+	}
+	&:hover::before{
+		box-shadow: 
+		inset 0 $icon-size/2 0 0 $green-l,
+		inset 0 $icon-size/-2 0 0 $green-l;
+	}
+	&::after{
+		box-shadow: inset 0 0 0 1px $green-l;
+	}
+}
+
+.icon-rotate{
+	box-shadow: inset 0 0 0 1px $purple;
+	&::after, &::before{
+		border: 0px solid transparent;
+	}
+	&:hover::before{
+		transition:
+			border-top-width 0.3s ease,
+			border-top-color 0.3s ease;
+		border-width: $icon-size;
+		border-top-color: $purple;
+	}
+	&:hover::after{
+		transition:
+			border-left-width 0.3s ease,
+			border-left-color 0.3s ease;
+		border-width: $icon-size;
+		border-left-color: $purple;
+	}
+	&:hover{
+		transition: background 0.001s ease 0.3s;
+		background: $purple;
+	}
+	i{
+		z-index: 1;
+	}
+}
+</style>
+</head>
+<body>
+. container
+	.content
+		h1.
+			CSS3 Icons
+		.icon-container
+			.icon.icon-fill
+				i.fa.fa-home
+			.icon.icon-enter
+				i.fa.fa-user
+			.icon.icon-expand 
+				i.fa.fa-bars
+			.icon.icon-collapse
+				i.fa.fa-sign-in
+			.icon.icon-rotate
+				i.fa.fa-phone
+</body>
+</html>
