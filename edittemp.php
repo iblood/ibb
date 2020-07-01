@@ -126,16 +126,16 @@ select {
 
 <form class="modal-content" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"  method="post">
   <div class="container">
-      <h1>Edit Address</h1>
+      <h1>Edit User Name</h1>
 <hr>
-<label for="naddress"><b>Your New Address</b></label>
-      <input type="text" placeholder="Enter Your New Address" name="naddress" required>
+<label for="nun"><b>Your New User Name</b></label>
+      <input type="text" placeholder="Enter Your New User Name" name="ncustomusername" required>
       <input type="hidden" name="id" value="<?php echo"$id";?>>
       <p>By proceeding with <strong>Change</strong> you could not change it For 6 Months</p>
 
       <div class="clearfix">
    <p>     Terminate and go<a href="iblood.github.io">Back</a></p>
-        <button type="submit" class="searchbtn" name="naddress">Commit Change(s)</button>
+        <button type="submit" class="searchbtn" name="nbcustomusername">Commit Change(s)</button>
       </div>
     </div>
   </form>
