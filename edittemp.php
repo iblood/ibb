@@ -1,4 +1,25 @@
-<?php inculde('searchconfig.php');?>
+<?php
+session_start();
+ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true){
+    header('location: login.php');
+    exit;
+}
+?>
+
+<?php 
+$fullname = $_SESSION['fullname'];
+$bgroup =$_SESSION['bgroup'];
+$country= $_SESSION['country'];
+$state = $_SESSION['state'];
+$district = $_SESSION['district'];
+$email = $_SESSION['email'];
+$phonenumber = $_SESSION['phonenumber'];
+$customusername= $_SESSION['customusername'];
+$address = $_SESSION['address'];
+$id = $_SESSION['user_id'];
+?>
+
+<?php inculde('editconfig.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,6 +126,16 @@ select {
 
 <form class="modal-content" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"  method="post">
   <div class="container">
-      <h1>Search </h1>
-      <p>Please fill in this form for searching donors.</p>
-      <hr>
+      <h1>Edit Full Name</h1>
+<hr>
+<label for="nfullname"><b>Your New Name</b></label>
+      <input type="text" placeholder="Enter Your New Name" name="nfullname" required>
+      <input type="hidden" name="id" value="<?php echo"$id";?>>
+      <p>By proceeding with <strong>Change</strong> you could not change it Permanently</p>
+
+      <div class="clearfix">
+   <p>     Terminate and go<a href="iblood.github.io">Back</a></p>
+        <button type="submit" class="searchbtn" name="nbfullname">Commit Change(s)</button>
+      </div>
+    </div>
+  </form>
