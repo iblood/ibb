@@ -135,7 +135,7 @@ select {
 
       <div class="clearfix">
    <p>     Terminate and go<a href="iblood.github.io">Back</a></p>
-        <button type="submit" class="searchbtn" name="nbfullname">Commit Change(s)</button>
+        <button type="submit" class="searchbtn" name="nbemail">Commit Change(s)</button>
       </div>
     </div>
   </form>
