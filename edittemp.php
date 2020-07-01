@@ -126,12 +126,12 @@ select {
 
 <form class="modal-content" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"  method="post">
   <div class="container">
-      <h1>Edit Full Name</h1>
+      <h1>Edit Email</h1>
 <hr>
-<label for="nfullname"><b>Your New Name</b></label>
-      <input type="text" placeholder="Enter Your New Name" name="nfullname" required>
+<label for="nemail"><b>Your New Email</b></label>
+      <input type="text" placeholder="Enter Your New Email" name="nemail" required>
       <input type="hidden" name="id" value="<?php echo"$id";?>>
-      <p>By proceeding with <strong>Change</strong> you could not change it Permanently</p>
+      <p>By proceeding with <strong>Change</strong> you could not change it For 6 Months</p>
 
       <div class="clearfix">
    <p>     Terminate and go<a href="iblood.github.io">Back</a></p>
