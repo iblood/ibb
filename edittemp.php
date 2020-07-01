@@ -128,14 +128,14 @@ select {
   <div class="container">
       <h1>Edit Email</h1>
 <hr>
-<label for="nemail"><b>Your New Email</b></label>
-      <input type="text" placeholder="Enter Your New Email" name="nemail" required>
+<label for="nphonenumber"><b>Your New Email</b></label>
+      <input type="text" placeholder="Enter Your New Phone Number" name="nphonenumber" required>
       <input type="hidden" name="id" value="<?php echo"$id";?>>
       <p>By proceeding with <strong>Change</strong> you could not change it For 6 Months</p>
 
       <div class="clearfix">
    <p>     Terminate and go<a href="iblood.github.io">Back</a></p>
-        <button type="submit" class="searchbtn" name="nbemail">Commit Change(s)</button>
+        <button type="submit" class="searchbtn" name="nbphonenumber">Commit Change(s)</button>
       </div>
     </div>
   </form>
