@@ -31,10 +31,9 @@ color:deeppink;
 /* Full-width input fields */
 input[type=text],input[type=email],input[type=tel],input[type=password]{
   width: 100%;
-  padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
+  border-bottom: 1px solid #f1f1f1;
 border-radius:4px;
 }
 
@@ -42,10 +41,9 @@ input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
-  background-color: #f1f1f1;
   outline: none;
-  border:0.75px solid deeppink;
-  border-radius:8px;
+  border:none;
+  border-radius:4px;
 }
 
 hr {
@@ -110,9 +108,9 @@ select {
       <hr>
    
       <input type="text" placeholder="FULL NAME" name="Fullname" required>
-    <label for="bgroup">Blood Group</label>
+   
 <select id="bgroup" name="bgroup" required>
-          <option value=""></option>
+          <option value="">BLOOD GROUP</option>
           <option value="a+">A +ve (A Positive)</option>
           <option value="a-">A -ve (A Negative)</option>  
           <option value="b+">B +ve (B Positive)</option>       
@@ -123,16 +121,14 @@ select {
           <option value="ab-">AB -ve (AB Negative)</option>        
 </select>
 
-<label for="country"><b>Country</b></label>
 <select id="country"   name="country"   required>
-<option value=""></option>
+<option value="">COUNTRY</option>
 <option value="India">India</option>
 </select>
 
 
-<label for="states"><b>State</b></label>
  <select id="groups" name="states" required>
-<option value=""></option>
+<option value="">STATE / UT</option>
     <option value='Andhra_pradesh'>Andhra pradesh</option>
     <option value='Arunanchal pradesh'>Arunanchal pradesh</option>
     <option value='Assam'>Assam</option>
@@ -165,7 +161,7 @@ select {
 </select>
 <label for="district"><b>District</b></label>
  <select id="sub_groups" name="district" required>
-<option data-group='SHOW' value=''></option>
+<option data-group='SHOW' value=''>DISTRICT</option>
 <option data-group='Andhra_pradesh' value='anantapur'>Anantapur</option>
 <option data-group='Andhra_pradesh' value='chittor'>Chittor</option>
 <option data-group='Andhra_pradesh' value='east godavari'>East godavari</option>
