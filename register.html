@@ -31,7 +31,6 @@ body {
 .container h1{
 color:deeppink;
 }
-/* Full-width input fields */
 input{
   width: 100%;
   margin: 5px 0 22px 0;
@@ -39,13 +38,12 @@ input{
 border:none;
 padding:10px;
 font-size:15px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid grey;
 border-radius:4px;
 }
 input::placeholder{
 color:black;
 font-size:15px;
-padding:10px;
 }
 input:focus{
 outline:none;
@@ -83,11 +81,9 @@ a {
 
 
 select {
-  margin-bottom: 1em;
   padding: 15px;
   border-bottom: 1px solid grey;
    width:100%;
-  background:#f1f1f1;
   border-radius: 0;
   &:focus, &:active {
     outline: 0;
@@ -159,7 +155,6 @@ select {
     <option value='Uttar Khand'>Uttar Khand</option>
     <option value='West Bengal'>West Bengal</option>
 </select>
-<label for="district"><b>District</b></label>
  <select id="sub_groups" name="district" required>
 <option data-group='SHOW' value=''>DISTRICT</option>
 <option data-group='Andhra_pradesh' value='anantapur'>Anantapur</option>
@@ -178,29 +173,23 @@ select {
       
 
 
-<label for="email"><b>Email</b></label>
-      <input type="email" placeholder="Enter Email" name="email" required>
 
-<label for="Pnumber"><b>Phone Number </b></label>
-      <input type="tel" minlength="10" maxlength="10"  placeholder="Enter Phone Number" name="pnumber" required>
+      <input type="email" placeholder="EMAIL" name="email" required>
 
-<label for="cuname"><b>Custom User Name</b></label>
-      <input type="text" minlength="6" placeholder="Please Choose A fictious Name" name="cuname" required>
+      <input type="tel" minlength="10" maxlength="10"  placeholder="PHONE NUMBER" name="pnumber" required>
 
-<label for="address"><b>Address</b></label>
-      <input type="text" placeholder="H:no/Street Name/colony/(city)(village)" name="address" required>
+      <input type="text" minlength="6" placeholder="USER NAME" name="cuname" required>
 
-<label for="password"><b>Create Your Password</b></label>
-      <input type="password" minlength="8" id="password"  placeholder="Create your password" name="password" required>
+      <input type="text" placeholder="ADDRESS" name="address" required>
+
+      <input type="password" minlength="8" id="password"  placeholder="PASSWORD" name="password" required>
       <i id="togglePassword" class="far fa-eye"></i>
 <label for="cpassword"><b>Confirm Your Password</b></label>
-      <input type="password" minlength="8" id="confirm_password" placeholder="Confirm your password" name="cpassword" required>
+      <input type="password" minlength="8" id="confirm_password" placeholder="RE-ENTER PASSWORD" name="cpassword" required>
       <i id="ctogglePassword" class="far fa-eye"></i>
-<label>
-        <input type="checkbox"  name="remember" style="margin-bottom:15px" required> By registering, you agree that you are above the age of 18
-      </label>
 
-      <p>By registering with <strong>INDO BLOOD</strong> you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <input type="checkbox"  name="remember" style="margin-bottom:15px" required> 
+
 
       <div class="clearfix">
    <p>     Terminate and go to <a href="iblood.github.io">Home</a></p>
