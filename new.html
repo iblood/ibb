@@ -121,8 +121,8 @@ z-index:99999;
 }
 .nav{
 top:0;
-left:-100%;
-width:100%;
+display:none;
+width:100;
 height:100%;
 background:rgba(0 0 0 0.95);
 flex-direction:column;
@@ -132,6 +132,7 @@ padding:50px;
 }
 .nav .active{
 left:0;
+display:flex;
 }
 .nav li{
 margin:5px 0;
@@ -184,12 +185,12 @@ Dggbhrhjyurg Tajikistan yhhhh yah by wtjgf rhbdbbih.</p>
 <li><a href="#">Insta</a></li>
 </ul>
 </section>
-<span class="menuicon" id="toggle" onclick="menutoggle()"></span>
+<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
 <script type="text/javascript">
-function menutoggle(){
-var nav=document.getElementById("nav");
+function menuToggle(){
+var nav = document.getElementById("nav");
 nav.classList.toggle("active");
-var toggle=document.getElementById("toggle");
+var toggle = document.getElementById("toggle");
 toggle.classList.toggle("active");
 }
 </script>
