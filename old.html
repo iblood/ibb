@@ -37,38 +37,62 @@ background:rgba(255,255,255,.1);
 z-index:20;
 pointer-events:none;
 }
-.container .cards:nth-child(1){
+.card-container .cards:nth-child(1){
 background:linear-gradient(45deg,#3503ad,#f7308c);
 }
-.container .cards:nth-child(2){
+.card-container .cards:nth-child(2){
 background:linear-gradient(45deg,#ccff00,#09afff);
 } 
-.container .cards:nth-child(3){
+.card-container .cards:nth-child(3){
 background:linear-gradient(45deg,#e91e63,#ffeb3b);
 }
-
+.card-container .cards .cardBx{
+position:absolute;
+top:0;
+left:0;
+bottom:0;
+right:0;
+justify-content:center;
+align-items:center;
+display:flex;
+text-align:center;
+}
+.card-container .cards .cardBx h2{
+margin:10px 0 0;
+padding:0;
+color:#fff;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+}
 </style>
 </head>
 <body>
 <section class="card-container">
 <div class="cards">
 <div class="cardBx">
+<div>
 <img src="design.png">
 <h2>Design</h2>
 </div>
+</div>
 <div class="cardlay"></div>
 </div>
 <div class="cards">
 <div class="cardBx">
+<div>
 <img src="code.png">
 <h2>Code</h2>
 </div>
+</div>
 <div class="cardlay"></div>
 </div>
 <div class="cards">
 <div class="cardBx">
+<div>
 <img src="launch.png">
 <h2>Launch</h2>
+</div>
 </div>
 <div class="cardlay"></div>
 </div>
