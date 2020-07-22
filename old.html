@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:#333;
+font-family:'poppins',sans-serif;
+}
+.card-container{
+position:relative;
+display:flex;
+width:100%;
+justify-content:space-between;
+}
+.card-container .cards{
+position:relative;
+height:400px;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.card-container .cards:after{
+content:'';
+position: absolute:
+top:0;
+left:0;
+width:50%;
+height:100%;
+background:rgba(255,255,255,.1);
+z-index:20;
+pointer-events:none;
+}
+.container .cards:nth-child(1){
+background:linear-gradient(45deg,#3503ad,#f7308c);
+}
+.container .cards:nth-child(2){
+background:linear-gradient(45deg,#ccff00,#09afff);
+} 
+.container .cards:nth-child(3){
+background:linear-gradient(45deg,#e91e63,#ffeb3b);
+}
+
+</style>
+</head>
+<body>
+<section class="card-container">
+<div class="cards">
+<div class="cardBx">
+<img src="design.png">
+<h2>Design</h2>
+</div>
+<div class="cardlay"></div>
+</div>
+<div class="cards">
+<div class="cardBx">
+<img src="code.png">
+<h2>Code</h2>
+</div>
+<div class="cardlay"></div>
+</div>
+<div class="cards">
+<div class="cardBx">
+<img src="launch.png">
+<h2>Launch</h2>
+</div>
+<div class="cardlay"></div>
+</div>
+</section>
+</body>
+</html>
